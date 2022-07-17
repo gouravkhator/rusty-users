@@ -23,7 +23,7 @@ impl UsersApp {
 
     fn render_header(self: &Self, ctx: &Context) {
         TopBottomPanel::top("users-app-header").show(ctx, |ui| {
-            ui.label("List of Random Users");
+            ui.label(RichText::new("Random Users List").size(30.0));
         });
     }
 
@@ -135,9 +135,9 @@ impl App for UsersApp {
 
             self.render_header(ctx);
             self.render_users_list(ctx);
-            ui.push_id("dark-mode-toggler", |ui| {
-                egui::widgets::global_dark_light_mode_buttons(ui);
-            });
+            // ui.push_id("dark-mode-toggler", |ui| {
+            // egui::widgets::global_dark_light_mode_buttons(ui);
+            // });
 
             // custom_window_frame(ctx, frame, "egui with custom frame", |ui| {
             //     ui.label("This is just the contents of the window");
