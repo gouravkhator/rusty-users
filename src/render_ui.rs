@@ -52,6 +52,29 @@ impl UsersApp {
     }
 }
 
+impl App for UsersApp {
+    fn update(&mut self, ctx: &egui::Context, frame: &mut eframe::Frame) {
+        CentralPanel::default().show(ctx, |ui| {
+            // ctx.set_debug_on_hover(true); // to debug the layout for the rendered elements
+
+            self.render_header(ctx);
+            self.render_users_list(ctx);
+            // ui.push_id("dark-mode-toggler", |ui| {
+            // egui::widgets::global_dark_light_mode_buttons(ui);
+            // });
+
+            // custom_window_frame(ctx, frame, "egui with custom frame", |ui| {
+            //     ui.label("This is just the contents of the window");
+            //     ui.horizontal(|ui| {
+            //         ui.label("egui theme:");
+            //         egui::widgets::global_dark_light_mode_buttons(ui);
+            //     });
+            // });
+        });
+    }
+}
+
+#[allow(dead_code)]
 fn custom_window_frame(
     ctx: &egui::Context,
     frame: &mut eframe::Frame,
@@ -126,26 +149,4 @@ fn custom_window_frame(
 
             add_contents(&mut content_ui);
         });
-}
-
-impl App for UsersApp {
-    fn update(&mut self, ctx: &egui::Context, frame: &mut eframe::Frame) {
-        CentralPanel::default().show(ctx, |ui| {
-            // ctx.set_debug_on_hover(true); // to debug the layout for the rendered elements
-
-            self.render_header(ctx);
-            self.render_users_list(ctx);
-            // ui.push_id("dark-mode-toggler", |ui| {
-            // egui::widgets::global_dark_light_mode_buttons(ui);
-            // });
-
-            // custom_window_frame(ctx, frame, "egui with custom frame", |ui| {
-            //     ui.label("This is just the contents of the window");
-            //     ui.horizontal(|ui| {
-            //         ui.label("egui theme:");
-            //         egui::widgets::global_dark_light_mode_buttons(ui);
-            //     });
-            // });
-        });
-    }
 }
