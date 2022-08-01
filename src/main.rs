@@ -6,7 +6,7 @@ use tokio;
 
 use api_handlers::UsersError;
 
-use eframe::{run_native, NativeOptions, egui};
+use eframe::{egui, run_native, NativeOptions};
 
 #[tokio::main]
 async fn main() -> Result<(), UsersError> {
@@ -16,7 +16,7 @@ async fn main() -> Result<(), UsersError> {
     };
 
     let users_app = UsersApp::new().await;
-    
+
     run_native(
         "Users App",
         window_options,

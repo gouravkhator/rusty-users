@@ -1,5 +1,7 @@
 # Rusty Users - Rust Simple GUI Demo showing Random Users' Data in Rust
 
+[![Apache](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/gouravkhator/rusty-users/blob/main/LICENSE.md)
+
 This repo uses Random Data API, to fetch the random users' data and then showcases that in the GUI native application.
 
 ## Commands
@@ -43,4 +45,4 @@ sudo dnf install openssl-devel
 
 ## credits!()
 
-- Best playlist for motivating me and guiding me on how to look through Rust docs and solve the issues yourself, is right pasted [here](https://youtube.com/playlist?list=PLfyJcJbPAedRqjVaOd-P8wp_Wy9RIN7Oq).
+- Best playlist for motivating me and guiding me, on how to look through Rust docs and solve the issues yourself, is rightly pasted [here](https://youtube.com/playlist?list=PLfyJcJbPAedRqjVaOd-P8wp_Wy9RIN7Oq).
