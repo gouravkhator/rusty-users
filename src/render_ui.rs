@@ -35,8 +35,8 @@ impl UsersApp {
     fn render_top_panel(self: &Self, ctx: &Context) {
         TopBottomPanel::top("top-panel").show(ctx, |ui| {
             let image = RetainedImage::from_image_bytes(
-                "sample-image.png",
-                include_bytes!("sample-image.png"),
+                "logo_image.png",
+                include_bytes!("logo_image.png"),
             )
             .expect("Failed loading the logo");
 

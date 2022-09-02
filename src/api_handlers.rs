@@ -1,6 +1,6 @@
 use serde::Deserialize;
 
-const BASE_API_URL: &str = "https://random-data-ap&&&i.com/api";
+const BASE_API_URL: &str = "https://random-data-api.com/api";
 
 #[derive(Deserialize, Debug, Default)]
 pub struct User {
@@ -80,7 +80,7 @@ pub async fn fetch_users() -> Result<UsersResponse, UsersError> {
     Ok(users_response)
 }
 
-// fetches users from actual api -- To be used when we have all the layout and styling solved
+// fetches users from actual api -- This function would be used when we have all the layout and styling issues solved
 pub async fn fetch_actual_users() -> Result<UsersResponse, UsersError> {
     let request_url = format!(
         "{api_url}/{path}",

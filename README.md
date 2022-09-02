@@ -1,6 +1,6 @@
 # Rusty Users - Rust Simple GUI Demo showing Random Users' Data in Rust
 
-[![Apache](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/gouravkhator/rusty-users/blob/main/LICENSE.md)
+[![Apache](https://img.shields.io/badge/license-Apache-blue.svg)](./LICENSE.md)
 
 This repo uses Random Data API, to fetch the random users' data and then showcases that in the GUI native application.
 
@@ -25,13 +25,13 @@ sudo dnf install openssl-devel
 
 ### Run/Build/Debug Commands
 
-- Run the project:
+- Run the project (unoptimized build, just for development purposes):
 
   ```sh
   cargo run
   ```
 
-- Build the project:
+- Build the project (for an optimized build):
 
   ```sh
   cargo build
@@ -39,9 +39,9 @@ sudo dnf install openssl-devel
 
 ## todo!()
 
-- Style various components of this GUI App
-- Add dark mode toggler in appropriate position
-- Build this app for WASM
+- [ ] Style various components of this GUI App
+- [ ] Add dark mode toggler in appropriate position
+- [ ] Build this app for WASM
 
 ## credits!()
 
